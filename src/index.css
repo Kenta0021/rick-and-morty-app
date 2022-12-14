@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;  
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #05292E;
+}
+
+.form {
+  display: none;
+}
+
+.App {
+  font-family: 'Roboto', sans-serif;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.search-bar {
+  width: 50%;
+  height: 25px;
+}
+
+.location-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+  width: 50.3%;
+  background-color: #9a9a9a;
+  color: black;
+}
+
+.location-list > ul:hover{
+  cursor: pointer;
+}
+
+.location-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #062226;
+  border-radius: 10px;
+}
+
+.location_list {
+  display: flex;
+  gap: 20px;
+}
+
+.search-button{
+  margin-top: 20px;
+  width: 90px;
+  height: 35px;
+}
+
+.location-residents {
+  display: flex;    
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding-bottom: 30px;
+  margin: 30px;
+}
+
+.resident-card {
+  background-color: #062226;
+  color: white;
+}
+
+.resident-card_header{
+  position: relative;
+}
+
+.resident-card_status {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px;
+  border-end-end-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #062226;
+}
+
+.circle {
+  width: 7px;
+  aspect-ratio: 1;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.circle.Alive {
+  background-color: #4AB648;
+}
+
+.circle.Dead {
+  background-color: #B94343;
+}
+
+.circle.unknown {
+  background-color: #938686;
+}
+
+.resident-card_body {
+  padding: 15px;
+}
+
+.resident-card_body > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.resident-card_body > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.resident-card_body > ul > li > span {
+  color: #7E7E7E;
+}
+
+.error-message {
+  color: #fff;
+  width: max-content;
+  border-radius: 10px;
+  position: absolute;
+  top: 5;
+  right: -100%;
+  background-color: red;
+  padding: 5px 15px;
+  animation: 0.7s ease-in forwards showError;
+}
+
+.error-message > p {
+  margin: 0;
+}
+
+@keyframes showError {
+  0%{right: -100%;}
+  25%{right: -75%;}
+  50%{right: -50%;}
+  75%{right: 0;}
+  100%{right: 10px;}
+}
+
+.list-pages {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.list-pages li {
+  background-color: #05292E;
+  color: white;
+  width: 35px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list-pages li.currentPage {
+  background-color: #062226;
+}
+
+.list-pages li:hover {
+  background-color: #4AB648;
+}
+
+
