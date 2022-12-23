@@ -83,7 +83,7 @@ function App() {
   return (
     <div className="App">
       <header >
-        <img className='header-img' src="./src/assets/image 3.jpg" alt="" />
+        <img className='header-img' src="./images/headerImg.jpg" alt="" />
       </header>
       <form onSubmit={handleSubmit} className='search-form'>
         <input className='search-bar' id='searchValue' type="text" onChange={handleChangeInput} placeholder='Search Your Dimension' />
